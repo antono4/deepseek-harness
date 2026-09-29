@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  # Grup yang sama dengan C1/C3 -> run akan mengantre, tidak saling menimpa README.
+  # Grup yang sama dengan C1/C3 + C2: run mengantre, tidak saling menimpa README.
   group: readme-updater
   cancel-in-progress: false
 
